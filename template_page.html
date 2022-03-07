@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style>
+	html, body{
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+	}  
+	* {
+	  box-sizing: border-box;
+	}  
+	.compet_name{
+	  display:flex;
+	  height: 10vh;
+	  background: #303f9f;
+	  justify-content:center;
+	  align-items:center;
+	  color: white;
+	  font-size: 4em;
+	  font-weight: bold;
+	}
+
+	.container{
+	  background: beige;
+	  height: 90vh;
+	  display:flex;
+	  flex-wrap: wrap;
+	  justify-content:center;
+	  
+	}
+	.item{
+	  width: 100%;
+	  background: #81d4fa;
+	  border: 1px solid black;
+	}
+	.item:nth-child(odd){
+	  width: 100%;
+	  background: #b6ffff;
+	}
+	
+	.sub_main{
+	  margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+	  background: beige;
+	}
+	.sub_item{
+	  justify-content:center;
+	  //border: 1px solid red;
+	  text-align: center;
+	}
+	.sub_no{
+	  font-size: 4em;
+	  font-weight: bold;
+	  width: 5%;
+	  height:100%;
+	  background: yellow;
+	}
+	.sub_name{
+	  font-size: 4em;
+	  font-weight: bold;
+	  width: 20%;
+	  height:100%;
+	  color: #303f9f;
+	}
+	.sub_center{
+	  font-size: 2em;
+	  font-weight: bold;
+	  width: 30%;
+	  height:100%;
+	}
+	.sub_points{
+	  font-size: 2em;
+	  font-weight: bold;
+	  width: 25%;
+	  height:100%;
+	}
+	.sub_total{
+	  font-size: 4em;
+	  font-weight: bold;
+	  width: 25%;
+	  height:100%;
+	  color: red;
+	}
+	.sub_win{
+	  font-size: 4em;
+	  font-weight: bold;
+	  width: 10%;
+	  height:100%;
+	  color: blue;
+	  background: #ff9800;
+	}
+	table{
+		width:100%;
+		height:100%;
+		border-collapse: separate;
+		border-spacing: 0;
+	}
+	tr, td { 
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;	
+	}
+</style>
+</head>
+<body>
+  <div class="compet_name">
+    <div class="school">품새/개인/초1학년부</div>
+  </div>
+  <div class="container">
+    <div class="item sub_main">
+		<table>
+		<tr>
+			<td rowspan="2" class="sub_item sub_no">1</td>
+			<td class="sub_item sub_name">홍길동</td>
+			<td class="sub_item sub_total">27.01</td>
+			<td rowspan="2" class="sub_item sub_win">1위</td>
+		</tr>
+		<tr>
+			<td class="sub_item sub_center">대한정도장</td>
+			<td class="sub_item sub_points">9.50/8.06/7.80</td>
+		</tr>
+		</table>
+	</div>
+    <div class="item sub_main">
+		<table>
+		<tr>
+			<td rowspan="2" class="sub_item sub_no">2</td>
+			<td class="sub_item sub_name">강감찬</td>
+			<td class="sub_item sub_total">27.01</td>
+			<td rowspan="2" class="sub_item sub_win">2위</td>
+		</tr>
+		<tr>
+			<td class="sub_item sub_center">한국체육대학교 동문도장</td>
+			<td class="sub_item sub_points">9.50/8.06/7.80</td>
+		</tr>
+		</table>
+	</div>	
+    <div class="item sub_main">
+		<table>
+		<tr>
+			<td rowspan="2" class="sub_item sub_no">3</td>
+			<td class="sub_item sub_name">David Wilson</td>
+			<td class="sub_item sub_total">27.01</td>
+			<td rowspan="2" class="sub_item sub_win">3위</td>
+		</tr>
+		<tr>
+			<td class="sub_item sub_center">Seoul National Institute</td>
+			<td class="sub_item sub_points">9.50/8.06/7.80</td>
+		</tr>
+		</table>
+	</div>
+    <div class="item sub_main">
+		<table>
+		<tr>
+			<td rowspan="2" class="sub_item sub_no">4</td>
+			<td class="sub_item sub_name">David Wilson</td>
+			<td class="sub_item sub_total">27.01</td>
+			<td rowspan="2" class="sub_item sub_win">4위</td>
+		</tr>
+		<tr>
+			<td class="sub_item sub_center">Seoul National Institute</td>
+			<td class="sub_item sub_points">9.50/8.06/7.80</td>
+		</tr>
+		</table>
+	</div>
+    <div class="item sub_main">
+		<table>
+		<tr>
+			<td rowspan="2" class="sub_item sub_no">5</td>
+			<td class="sub_item sub_name">나운설</td>
+			<td class="sub_item sub_total">27.01</td>
+			<td rowspan="2" class="sub_item sub_win">5위</td>
+		</tr>
+		<tr>
+			<td class="sub_item sub_center">용인대학교 석사도장</td>
+			<td class="sub_item sub_points">9.50/8.06/7.80</td>
+		</tr>
+		</table>
+	</div>
+    <div class="item sub_main">
+		<table>
+		<tr>
+			<td rowspan="2" class="sub_item sub_no">6</td>
+			<td class="sub_item sub_name">&nbsp</td>
+			<td class="sub_item sub_total">&nbsp</td>
+			<td rowspan="2" class="sub_item sub_win">&nbsp</td>
+		</tr>
+		<tr>
+			<td class="sub_item sub_center">&nbsp</td>
+			<td class="sub_item sub_points">&nbsp</td>
+		</tr>
+		</table>
+	</div>
+  </div>  
+</body>
+</html>
